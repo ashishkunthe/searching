@@ -1,0 +1,81 @@
+body {
+  background-color: #f0f0f0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  background-color: #ff6f61;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 3px solid #fef65b;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #333;
+  background-color: #ffdfba;
+  outline: none;
+}
+
+input:focus {
+  border-color: #61dafb;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff0080;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  background-color: #ffbf00;
+  transform: scale(1.1);
+}
+
+.search-results {
+  display: flex; /* Use Flexbox to align lists horizontally */
+  justify-content: space-between; /* Ensure even spacing between lists */
+  gap: 20px; /* Adds space between the two lists */
+  padding: 20px;
+  background-color: #8be9fd;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.data-list,
+.result-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 24px;
+  color: #ff79c6;
+  flex: 1; /* Make both lists take equal space */
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #50fa7b;
+  border-radius: 12px;
+  background-color: #ffb86c;
+  display: flex; /* Flexbox for horizontal content alignment */
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background-color: #bd93f9;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+}
